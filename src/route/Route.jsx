@@ -1,11 +1,11 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import { App } from "../veneciaCatering/App";
 import { Inicio } from "../pages/Inicio";
 import { Galeria } from "../pages/Galeria";
 import { AcercaDe } from "../pages/AcercaDe";
 import { Contacto } from "../pages/Contacto";
 
-const route = createBrowserRouter([
+const route = createHashRouter([
   {
     path: "/",
     element: <App />,
