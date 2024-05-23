@@ -33,15 +33,15 @@ export const Galeria = () => {
             transition={{ type: "spring", stiffness: 200, damping: 20 }}
           >
             <div
-              className={`flex cursor-pointer flex-col items-center justify-center
-                ${expandedImageIndex === index ? " size-60 md:size-96" : "size-60"}`}
+              className={`!flex cursor-pointer items-center !justify-center
+                ${expandedImageIndex === index ? "size-60 md:size-96" : "size-60"}`}
               onClick={() => toggleExpandImage(index)}
             >
               <img
                 src={`/proyecto-venenciaCatering/assets/img/${imagen.src}`}
                 alt={imagen.alt}
                 className={`object-cover 
-                  ${expandedImageIndex === index ? " size-60 md:size-96" : "size-60"}`}
+                  ${expandedImageIndex === index ? "size-60 md:size-96" : "size-60"}`}
               />
             </div>
           </MagicCard>
