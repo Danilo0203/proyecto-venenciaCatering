@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer components {
+  .list {
+    @apply mb-[2em] p-0 [counter-reset:li] [list-style:none];
+  }
+  .list ul {
+    @apply my-0 ml-[2em] mr-0;
+  }
+  .list li {
+    @apply relative mx-0 my-[0.5em] block rounded-[0.3em] py-[0.4em] pl-[2em] pr-[0.4em] text-[#192c07] no-underline transition-all duration-[0.3s] ease-[ease-out] [background:#b9ea6c] before:absolute before:left-[-1.3em] before:top-2/4 before:mt-[-1.3em] before:h-[2em] before:w-[2em] before:rounded-[2em] before:border-[0.3em] before:border-solid before:border-white before:text-center before:font-[bold] before:leading-[2em] before:transition-all before:duration-[0.3s] before:ease-[ease-out] before:content-[counter(li)] before:[background:#609b15] before:[counter-increment:li] hover:[background:#eaf9ce] hover:before:rotate-[360deg];
+  }
+  a {
+    @apply no-underline;
+  }
+  /* <main-style> ============================ */
+  .menu__link {
+    @apply relative leading-loose before:absolute before:bottom-[-0.25rem] before:right-0 before:h-0.5 before:w-0 before:rounded-sm before:bg-white before:content-[''] before:[transition:right_0.4s,width_0.4s,left_0.4s] hover:before:left-0 hover:before:w-full;
+  }
+}
