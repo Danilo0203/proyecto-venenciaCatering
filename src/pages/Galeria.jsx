@@ -44,7 +44,7 @@ export const Galeria = () => {
         {imagenes.map((imagen, index) => (
           <img
             key={index}
-            src={`/assets/img/${imagen.src}`}
+            src={`/proyecto-venenciaCatering/assets/img/${imagen.src}`}
             alt={imagen.alt}
             className="h-32 w-full object-cover md:h-80"
           />
